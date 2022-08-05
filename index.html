@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Caravan</title>
+</head>
+
+<body>
+<!--FORMULÁRIO LOGIN INÍCIO-->
+
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLogin">Acesse para adquirir sua viagem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">E-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+        <small id="emailHelp" class="form-text text-muted">Esqueceu a senha? <a href="formulario.html">Clique aqui.</a></small>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Criar Minha Conta</button>
+        <button type="button" class="btn btn-primary">Entrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--FORMULÁRIO LOGIN FIM-->
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+    <a class="navbar-brand" href="index.html"><img src="img/caravan.svg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown pl-md-3">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Locais
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="local.html">Califórnia</a>
+            <a class="dropdown-item" href="local.html">Paris</a>
+            <a class="dropdown-item" href="local.html">Dubai</a>
+          </div>
+        </li>
+        <li class="nav-item pl-md-3">
+          <a class="nav-link" href="planos.html">Planos<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item pl-md-3">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+
+        <li class="nav-item pl-md-3">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin" data-whatever="@mdo">Login</a>
+        </li>
+        <li class="nav-item pl-md-3">
+          <a class="btn btn-primary ml-md-2" href="inscricao.html">Inscreva-se </a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container-fluid">
+    <div class="row bg-dark text-white">
+
+      <div class="col-lg-7 p-0">
+        <div id="carouselCidade" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselCidade" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCidade" data-slide-to="1"></li>
+            <li data-target="#carouselCidade" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="local.html"><img class="d-block w-100" src="img/california.jpg" alt="Califórnia"></a>
+              <div class="carousel-caption">
+                <h3 class="display-4">Califórnia</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="local.html"><img class="d-block w-100" src="img/dublin.jpg" alt="Segundo Slide"></a>
+              <div class="carousel-caption">
+                <h3 class="display-4">Dubai</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="local.html"><img class="d-block w-100" src="img/paris.jpg" alt="Terceiro Slide"></a>
+              <div class="carousel-caption">
+                <h3 class="display-4">Paris</h3>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselCidade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselCidade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 my-auto">
+        <h1 class="display-4 mb-4 mx-3">Realize a viagem do seus sonhos</h1>
+        <p class="lead mx-3">O melhor local para a sua viagem. Mais de 5.000 destinos</p>
+        <form action="">
+          <div class="input-group mb-3 mx-3">
+            <input type="text" class="form-control " placeholder="E-mail" aria-label="E-mail"
+              aria-describedby="button-addon2">
+            <div class="input-group-append mr-3">
+              <button class="btn btn-primary" type="button" id="button-addon2">Botão</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <span class="h6 d-block uppercase">Tudo de melhor para você</span>
+      <h1 class="display-4 text-primary">Aproveite as Vantagens</h1>
+
+
+      <div class="row mt-5">
+        <div class="col-xl-4 col-md-6">
+          <div class="card shadow-sm p-3 mb-3 bg-white rounded hover">
+            <div class="card-body">
+              <div class="icone d-flex justify-content-center">
+                <img src="img/icones/passaporte.svg" alt="">
+              </div>
+              <h3 class="h5">Documentos</h3>
+            </div>
+
+            <p class="border-top pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum doloribus expedita
+              consequuntur
+              earum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+          <div class="card shadow-sm p-3 mb-3 bg-white rounded hover">
+            <div class="card-body">
+              <div class="icone d-flex justify-content-center">
+                <img src="img/icones/passagens.svg" alt="Passagens">
+              </div>
+              <h3 class="h5">Passagens</h3>
+            </div>
+
+            <p class="border-top pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum doloribus expedita
+              consequuntur
+              earum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+          <div class="card shadow-sm p-3 mb-3 bg-white rounded hover">
+            <div class="card-body">
+              <div class="icone d-flex justify-content-center">
+                <img src="img/icones/translado.svg" alt="Translado">
+              </div>
+              <h3 class="h5">Translado</h3>
+            </div>
+
+            <p class="border-top pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum doloribus expedita
+              consequuntur
+              earum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+          <div class="card shadow-sm p-3 mb-3 bg-white rounded hover">
+            <div class="card-body">
+              <div class="icone d-flex justify-content-center">
+                <img src="img/icones/praias.svg" alt="Praias">
+              </div>
+              <h3 class="h5">Praias</h3>
+            </div>
+
+            <p class="border-top pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum doloribus expedita
+              consequuntur
+              earum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+          <div class="card shadow-sm p-3 mb-3 bg-white rounded hover">
+            <div class="card-body">
+              <div class="icone d-flex justify-content-center">
+                <img src="img/icones/bagagens.svg" alt="Bagagens">
+              </div>
+              <h3 class="h5">Bagagens</h3>
+            </div>
+
+            <p class="border-top pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum doloribus expedita
+              consequuntur
+              earum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+          <div class="card shadow-sm p-3 mb-3 bg-white rounded hover">
+            <div class="card-body">
+              <div class="icone d-flex justify-content-center">
+                <img src="img/icones/turismo.svg" alt="Turismo">
+              </div>
+              <h3 class="h5">Turismo</h3>
+            </div>
+
+            <p class="border-top pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum doloribus expedita
+              consequuntur
+              earum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-3">
+        <a href="planos.html" class="btn btn-primary btn-lg">Comprar Plano</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-quote p-md-5 p-3">
+    <blockquote class="blockquote text-center p-md-5 p-3">
+      <p class="display-4 text-white"><em>A felicidade não está na estrada que leva a algum lugar. A felicidade é a
+          própria estrada.</em></p>
+    </blockquote>
+    <footer class="blockquote-footer text-white text-center lead">Bob Dylan</footer>
+  </section>
+
+  <section class="container col-md-12">
+    <div class="accordion" id="perguntas">
+      <div class="text-center my-5">
+        <span class="h6 d-block uppercase">Ainda está com dúvida?</span>
+        <h1 class="display-4 text-primary">Perguntas Frequentes</h1>
+      </div>
+
+      <div class="accordion text-center container col-12 col-md-6" id="accordionExample">
+        <div class="dropdown-divider"></div>
+        <div class="p-3">
+          <div class="" id="headingOne">
+            <h5 class="mb-0">
+              <a class="lead text-primary" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                ✈ É possível cancelar a viagem?
+            </a>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              01.Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="p-3">
+          <div class="display-4" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="lead text-primary" data-toggle="collapse"
+                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ✈ É possível adiar a viagem?
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="card-body">
+          <div class="" id="headingThree">
+            <h5 class="mb-0">
+              <a class="lead text-primary" data-toggle="collapse"
+                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ✈ O que acontece se perder o voo?
+            </a>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+      </div>
+      <div class="text-center my-5">
+        <span class="h6 d-block uppercase">Fale Conosco para mais dúvidas:</span>
+        <button class="btn btn-primary btn-lg mt-2">Entre em Contato</button>
+      </div>
+  </section>
+
+  <footer class="bg-dark text-white">
+    <div class="container py-4">
+      <div class="row">
+
+        <div class="col-md-3 col-12 text-center mb-3">
+          <h4 class="h6 uppercase">Páginas</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html" class="text-white">Planos</a></li>
+            <li><a href="contato.html" class="text-white">Contatos</a></li>
+            <li><a href="inscricao.html" class="text-white">Inscreva-se</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-12 text-center mb-3">
+          <h4 class="h6 uppercase">Locais</h4>
+          <ul class="list-unstyled">
+            <li><a href="local.html" class="text-white">Califórnia</a></li>
+            <li><a href="local.html" class="text-white">Paris</a></li>
+            <li><a href="local.html" class="text-white">Dubai</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-4 col-12 text-center mb-3">
+          <h4 class="h6 uppercase">Dados de Contato</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com.br</li>
+            <li>(18) 99999-9999</li>
+            <li>De Seg. a Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-2 col-12 text-center">
+          <h4 class="h6 uppercase">Redes Sociais</h4>
+          <ul class="list-unstyled text-secondary">
+            <div>
+              <a class="btn btn-outline-secondary mb-2 btn-sm" href="#">Facebook</a>
+            </div>
+            <a class="btn btn-outline-secondary mb-2 btn-sm" href="#">Instagram</a>
+            <a class="btn btn-outline-secondary mb-2 btn-sm" href="#">Youtube</a>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Caravan &copy 2017. Direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="jquery/jquery-3.3.1.slim.min.js"></script>
+  <script src="popper/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

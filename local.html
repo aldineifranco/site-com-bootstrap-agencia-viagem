@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Local</title>
+</head>
+
+<body>
+  <!--FORMULÁRIO LOGIN INÍCIO-->
+
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLogin">Acesse para adquirir sua viagem</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">E-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+          <small id="emailHelp" class="form-text text-muted">Esqueceu a senha? <a href="formulario.html">Clique
+              aqui.</a></small>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Criar Minha Conta</button>
+          <button type="button" class="btn btn-primary">Entrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FORMULÁRIO LOGIN FIM-->
+ 
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+    <a class="navbar-brand" href="index.html"><img src="img/caravan.svg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown pl-md-3">
+          <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Locais
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="local.html">Califórnia</a>
+            <a class="dropdown-item" href="local.html">Paris</a>
+            <a class="dropdown-item" href="local.html">Dubai</a>
+          </div>
+        </li>
+        <li class="nav-item pl-md-3">
+          <a class="nav-link" href="planos.html">Planos<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item pl-md-3">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+
+        <li class="nav-item pl-md-3">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin" data-whatever="@mdo">Login</a>
+        </li>
+        <li class="nav-item pl-md-3">
+          <a class="btn btn-primary ml-md-2" href="inscricao.html">Inscreva-se </a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <section class="text-center my-5">
+    <span class="h6 d-block uppercase">Conheça os melhores destinos</span>
+    <h1 class="display-4 text-primary">Aproveite as Vantagens</h1>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-md">
+        <img src="img/local/foto-1.jpg" class="img-fluid mb-3" alt="">
+
+        <img src="img/local/foto-2.jpg" class="img-fluid mb-2" alt="">
+
+        <img src="img/local/foto-3.jpg" class="img-fluid mb-4" alt="">
+      </div>
+      <div class="col-md">
+        <img src="img/local/foto-4.jpg" class="img-fluid mb-3" alt="">
+
+        <img src="img/local/foto-5.jpg" class="img-fluid mb-3" alt="">
+
+      </div>
+      <div class="col-md">
+        <img src="img/local/foto-6.jpg" class="img-fluid mb-3" alt="">
+
+        <img src="img/local/foto-7.jpg" class="img-fluid mb-3" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center my-5">
+    <span class="h6 d-block uppercase">Descubra o que acontece na cidade</span>
+    <h1 class="display-4 text-primary">Próximos Eventos</h1>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <table class="table table-hover mb-5 table-responsive-md">
+        <thead>
+          <tr>
+            <th scope="col">Data</th>
+            <th scope="col">Evento</th>
+            <th scope="col">Local</th>
+            <th scope="col">Ticket</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">23/07</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td><a href="#" class="btn btn-outline-secondary">Comprar Ticket</a></td>
+          </tr>
+          <tr>
+            <th scope="row">24/07</th>
+            <td>Jacob</td>
+            <td>Thornton adfafasdfasdfasfdadsf</td>
+            <td><a href="#" class="btn btn-outline-secondary">Comprar Ticket</a></td>
+          </tr>
+          <tr>
+            <th scope="row">25/07</th>
+            <td colspan="2">Larry the Bird</td>
+            <td><a href="#" class="btn btn-outline-secondary">Comprar Ticket</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+
+  <!--RODAPÉ-->
+
+  <footer class="bg-dark text-white">
+    <div class="container py-4">
+      <div class="row">
+
+        <div class="col-md-3 col-12 text-center mb-3">
+          <h4 class="h6 uppercase">Páginas</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html" class="text-white">Planos</a></li>
+            <li><a href="contato.html" class="text-white">Contatos</a></li>
+            <li><a href="inscricao.html" class="text-white">Inscreva-se</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-12 text-center mb-3">
+          <h4 class="h6 uppercase">Locais</h4>
+          <ul class="list-unstyled">
+            <li><a href="local.html" class="text-white">Califórnia</a></li>
+            <li><a href="local.html" class="text-white">Paris</a></li>
+            <li><a href="local.html" class="text-white">Dubai</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-4 col-12 text-center mb-3">
+          <h4 class="h6 uppercase">Dados de Contato</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com.br</li>
+            <li>(18) 99999-9999</li>
+            <li>De Seg. a Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-2 col-12 text-center">
+          <h4 class="h6 uppercase">Redes Sociais</h4>
+          <ul class="list-unstyled text-secondary">
+            <div>
+              <a class="btn btn-outline-secondary mb-2 btn-sm" href="#">Facebook</a>
+            </div>
+            <a class="btn btn-outline-secondary mb-2 btn-sm" href="#">Instagram</a>
+            <a class="btn btn-outline-secondary mb-2 btn-sm" href="#">Youtube</a>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Caravan &copy 2017. Direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="jquery/jquery-3.3.1.slim.min.js"></script>
+  <script src="popper/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

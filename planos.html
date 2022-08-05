@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Planos</title>
+</head>
+
+<body>
+  <!--FORMULÁRIO LOGIN INÍCIO-->
+
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLogin">Acesse para adquirir sua viagem</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">E-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+          <small id="emailHelp" class="form-text text-muted">Esqueceu a senha? <a href="formulario.html">Clique
+              aqui.</a></small>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Criar Minha Conta</button>
+          <button type="button" class="btn btn-primary">Entrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FORMULÁRIO LOGIN FIM-->
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+    <a class="navbar-brand" href="index.html"><img src="img/caravan.svg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown pl-md-3">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Locais
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="local.html">Califórnia</a>
+            <a class="dropdown-item" href="local.html">Paris</a>
+            <a class="dropdown-item" href="local.html">Dubai</a>
+          </div>
+        </li>
+        <li class="nav-item pl-md-3">
+          <a class="nav-link active" href="planos.html">Planos<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item pl-md-3">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+
+        <li class="nav-item pl-md-3">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin" data-whatever="@mdo">Login</a>
+        </li>
+        <li class="nav-item pl-md-3">
+          <a class="btn btn-primary ml-md-2" href="inscricao.html">Inscreva-se </a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class="text-center my-5">
+      <span class="h6 d-block uppercase">Seu plano, sua viagem</span>
+      <h1 class="display-4 text-primary">Escolha o Plano</h1>
+    </div>
+
+    <div class="row my-5 text-left">
+      <div class="col-md mb-5">
+        <div class="bg-light p-4 rounded box-shadow">
+          <h2 class="pl-3">Gold</h2>
+
+          <ul class="lead text-secondary list-unstyled lista-plano">
+            <li>30 dias de viagem</li>
+            <li>3 destinos diferentes</li>
+            <li>Tudo pago pela empresa</li>
+            <li>Ingressos pra festas</li>
+          </ul>
+
+          <form>
+            <div class="form-group pl-2">
+              <select class="form-control bg-light" id="inputCidade">
+                <option class="font-weight-bold">-- Selecione a cidade --</option>
+                <option>Califórnia</option>
+                <option>Paris</option>
+                <option>Dubai</option>
+              </select>
+            </div>
+          </form>
+          <div class="row mt-4 align-items-center">
+            <div class="col">
+              <a class="btn btn-primary btn-block" href="plano-escolhido-checkout.html">Comprar Plano</a>
+            </div>
+            <div class="col text-center mt-2">
+              <h3>R$ 5.000</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md">
+        <div class="bg-light p-4 rounded box-shadow">
+          <h2 class="pl-3">Platinium <span class="badge badge-secondary badge-success">Novo</span></h2>
+
+          <ul class="lead text-secondary list-unstyled lista-plano">
+            <li>60 dias de viagem</li>
+            <li>5 destinos diferentes</li>
+            <li>Tudo pago pela empresa</li>
+            <li>Ingressos pra festas</li>
+          </ul>
+
+          <form>
+            <div class="form-group pl-2">
+              <select class="form-control bg-light" id="inputCidade">
+                <option class="font-weight-bold">-- Selecione a cidade --</option>
+                <option>Califórnia</option>
+                <option>Paris</option>
+                <option>Dubai</option>
+              </select>
+            </div>
+          </form>
+          <div class="row mt-4 align-items-center">
+            <div class="col">
+              <a class="btn btn-primary btn-block" href="plano-escolhido-checkout.html">Comprar Plano</a>
+            </div>
+            <div class="col text-center mt-2">
+              <h3>R$ 7.000</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+  <!--RODAPÉ-->
+
+  <footer class="bg-dark text-white">
+    <div class="container py-4">
+      <div class="row">
+
+        <div class="col-md-3 col-12 text-center mb-3">
+          <h4 class="h6 uppercase">Páginas</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html" class="text-white">Planos</a></li>
+            <li><a href="contato.html" class="text-white">Contatos</a></li>
+            <li><a href="inscricao.html" class="text-white">Inscreva-se</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-12 text-center mb-3">
+          <h4 class="h6 uppercase">Locais</h4>
+          <ul class="list-unstyled">
+            <li><a href="local.html" class="text-white">Califórnia</a></li>
+            <li><a href="local.html" class="text-white">Paris</a></li>
+            <li><a href="local.html" class="text-white">Dubai</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-4 col-12 text-center mb-3">
+          <h4 class="h6 uppercase">Dados de Contato</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com.br</li>
+            <li>(18) 99999-9999</li>
+            <li>De Seg. a Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-2 col-12 text-center">
+          <h4 class="h6 uppercase">Redes Sociais</h4>
+          <ul class="list-unstyled text-secondary">
+            <div>
+              <a class="btn btn-outline-secondary mb-2 btn-sm" href="#">Facebook</a>
+            </div>
+            <a class="btn btn-outline-secondary mb-2 btn-sm" href="#">Instagram</a>
+            <a class="btn btn-outline-secondary mb-2 btn-sm" href="#">Youtube</a>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Caravan &copy 2017. Direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="jquery/jquery-3.3.1.slim.min.js"></script>
+  <script src="popper/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
